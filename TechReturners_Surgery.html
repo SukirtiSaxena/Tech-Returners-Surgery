@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tech Returners Surgery">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Sukirti Saxena">
+
+    <style>
+        .topnav {
+            background-color: darkgreen;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: lightgreen;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: lightgreen;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: whit rgb(19, 71, 36)e;
+        }
+
+        img {
+            max-width: 70%;
+            text-align: center;
+        }
+
+        .container {
+            display: flex
+        }
+
+        .image {
+            flex-basis: 50%
+        }
+
+        .text {
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        /* Style inputs with type="text", select elements and textareas */
+        input[type=text],
+        select,
+        textarea {
+            padding: 12px 20px;
+            border: 1px solid rgb(19, 71, 36);
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        /*submit button */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: rgb(19, 71, 36);
+            padding: 12px 20px;
+            border-radius: 4px;
+        }
+
+        .feedback_container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+    <title>Tech Returners Surgery - 115 Mancunian Way, Manchester, UK, M20 3PX </title>
+</head>
+
+<body>
+    <div
+        style="text-align:center; border:3px; border-style:solid; border-color:green; padding: 2em; background-color: rgb(78, 204, 78);">
+        <h1><a href='Test.html'>Tech Returners Surgery</a></h1>
+        <p> 370 Dudley Hill Road, Bradford , BD2 3AA </p>
+        <p id="TechReturners_SurgeryPhone"> 0333 050 9138</p>
+        <h2> Welcome to the Tech Returners Surgery! </h2>
+    </div>
+
+    <div class="text" style="text-align:left; color:darkgreen">
+        <p> Surgery Opening Times </p>
+        <p> Monday - Fridays: 8am - 7pm </p>
+        <p>Saturdays - Sundays: 10am - 4pm </p>
+    </div>
+    <div class="text" style="text-align:right;">
+        <p><input name="textSearch" type="text" id="txtSearch" title="Search this site..." size="50" inputmode="search"
+                onkeypress="return Null; " />
+            <a id="DoSearch" href="">Search</a>
+        </p>
+    </div>
+
+
+    </div>
+
+    <div class="topnav">
+        <a href='/Home'>Home</a>
+        <a href='/Services'>Services</a>
+        <a href='/Team'>Team</a>
+        <a href='/Patient Information'>Patient Information</a>
+        <a href='/Well-being Centre'>Well-being Centre</a>
+        <a href='/Contact'>Contact Us</a>
+        <a href='/COVID 19 Vaccination'>COVID 19 Vaccination</a>
+    </div>
+
+    <div class="container">
+        <div class="image" style="text-align:left; border:3px; border-style:solid; border-color:green; padding: 2em;">
+            <img src='surgery.png' alt='Surgery building front view' width="200px" height="200px" />
+        </div>
+        <div class="text"
+            style="text-align:left; border:3px; border-style:solid; border-color:green; padding: 2em; background-color: rgb(78, 204, 78); color: lightcyan;">
+            <h3>COVID RESTRICTION UPDATE</h3>
+            <p>Throughout the pandemic we have strove to make the surgery as safe as
+                possible for
+                all our patients and staff, we will continue to do so.From the 19TH JULY 2021 NOTHING WILL CHANGE AT
+                THE
+                SURGERY – Patients will still need to wear a mask, socially distance and use hand sanitiser in the
+                surgery
+                and staff will continue to wear PPE.
+                If you arrive without a mask and are not exempt, you will be asked to leave.</p>
+        </div>
+    </div>
+
+
+    <div class="topnav">
+        <a href='/get help now'>GET HELP NOW</a>
+        <a href='/Self care advice'>SELF CARE ADVICE</a>
+        <a href='/well being centre'>WELL-BEING CENTRE</a>
+        <a href='/repeat prescriptions'>REPEAT PRESCRIPTIONS</a>
+    </div>
+
+    <div class="container">
+        <div style="text-align:left; border:3px; border-style:solid; border-color:green; padding: 2em;">
+            <h3>How to use Ask My Doc?</h3>
+            <video id="video" controls preload="metadata" width="320" height="240">
+                <source src="https://www.youtube.com/watch?v=sFzCh-HhaWo" type="video/mp4">
+                <track label="English" kind="subtitles" srclang="en" src="" default>
+            </video>
+        </div>
+
+        <div class="text"
+            style="text-align:left; border:3px; border-style:solid; border-color:green; padding: 2em; background-color: rgb(78, 204, 78); color:darkgreen;">
+            <div class="feedback_container">
+                <p>
+                <h3>Feedback Form</h3>
+                </p>
+                <form action="">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" size="100%" placeholder="Your name..">
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" size="100%" placeholder="Your last name..">
+                    <br>
+                    <label for="subject">Subject</label> <br>
+                    <textarea id="subject" name="subject" size="100%" placeholder="Write something.."
+                        style="height:200px"></textarea> <br>
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="topnav">
+            <p>Tech Returners Surgery </p>
+            <a href="">Home</a>
+            <a href="">Website Accessibility</a>
+            <a href="">Website Privacy</a>
+            <a href="">Cookies</a>
+            <a href="">Contact</a>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
